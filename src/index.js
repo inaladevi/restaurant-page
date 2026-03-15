@@ -1,1 +1,3 @@
-console.log("Restaurant page running");
+import loadHome from "./home.js";
+
+loadHome();
