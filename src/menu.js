@@ -47,4 +47,4 @@ function loadMenu() {
   content.appendChild(container);
 }
 
-export default loadMenu;
+export default loadMenu; 
