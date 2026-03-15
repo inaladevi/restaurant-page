@@ -1,5 +1,4 @@
 function loadHome() {
-
   const content = document.querySelector("#content");
 
   const container = document.createElement("div");
@@ -13,14 +12,18 @@ function loadHome() {
 
   const description = document.createElement("p");
   description.textContent =
-    "A soft, sourdough crust blistered by a roaring 900-degree fire, topped with hand-crushed tomatoes and fresh mozzarella that melts the moment it hits the stone."
+    "A soft, sourdough crust blistered by a roaring 900-degree fire, topped with hand-crushed tomatoes and fresh mozzarella that melts the moment it hits the stone.";
 
-  container.appendChild(title);
-  container.appendChild(tagline);
-  container.appendChild(description);
+  const textBlock = document.createElement("div");
+  textBlock.classList.add("home-text");
+
+  textBlock.appendChild(title);
+  textBlock.appendChild(tagline);
+  textBlock.appendChild(description);
+
+  container.appendChild(textBlock);
 
   content.appendChild(container);
-
 }
 
 export default loadHome;
