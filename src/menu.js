@@ -1,6 +1,5 @@
 function loadMenu() {
-  const content = document.querySelector("#content");
-
+    
   const container = document.createElement("div");
   container.classList.add("menu-container");
 
@@ -44,7 +43,7 @@ function loadMenu() {
     container.appendChild(card);
   });
 
-  content.appendChild(container);
+  return container;
 }
 
 export default loadMenu; 
