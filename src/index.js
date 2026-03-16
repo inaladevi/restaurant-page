@@ -1,6 +1,8 @@
+import "./styles.css";
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
 import loadContact from "./contact.js";
+import heroImg from "./images/pizza-hero-img-cropped.jpg";
 
 const content = document.querySelector("#content");
 
@@ -14,22 +16,21 @@ const contactBtn = document.querySelector("#contact");
 
 homeBtn.addEventListener("click", () => {
   clearContent();
-  const page = loadHome();
-  content.appendChild(page);
+  content.appendChild(loadHome());
 });
 
 menuBtn.addEventListener("click", () => {
   clearContent();
-  const page = loadMenu();
-  content.appendChild(page);
+  content.appendChild(loadMenu());
 
 });
 
 contactBtn.addEventListener("click", () => {
   clearContent();
-  const page = loadContact();
-  content.appendChild(page);
+  content.appendChild(loadContact());
 });
 
 clearContent();
-loadHome();
+content.appendChild(loadHome()); 
+
+document.body.style.backgroundImage = `url(${heroImg})`;
