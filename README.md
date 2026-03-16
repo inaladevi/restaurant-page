@@ -1,4 +1,4 @@
-# Restaurant Page
+# 🍕 Restaurant Page
 
 A small single-page restaurant website built using **JavaScript modules and Webpack**.  
 The entire page content is dynamically generated through JavaScript rather than static HTML.
